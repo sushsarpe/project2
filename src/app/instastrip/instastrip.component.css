@@ -89,7 +89,7 @@
         margin: 15px 0;
     }
     .container_a .wrapper{
-        width: 100%;
+        width: 80%;
         background-color: #f6f6f6;
     }
 
@@ -97,8 +97,4 @@
         flex-direction: column;
         width: 80%;
     }
-}
-
-@media only screen and (min-width){
-    
 }

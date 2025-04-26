@@ -14,4 +14,12 @@ import { ContactusComponent } from "./contactus/contactus.component";
 })
 export class AppComponent {
   title = 'project2';
+  
+  scrollToSection(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+  
 }

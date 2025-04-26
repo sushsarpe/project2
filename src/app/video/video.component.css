@@ -16,3 +16,12 @@
     height: auto;
 }
 
+@media only screen and (min-width:200px) and (max-width:600px){
+    .video-box{
+        display: flex;
+        flex-direction:column-reverse;
+        position:static;
+        height: auto;
+    }
+  
+  }

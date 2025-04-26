@@ -31,5 +31,32 @@
   text-decoration: none;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
   font-weight: 600;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
 
+.navbar ul li a:hover{
+
+}
+
+@media only screen and (min-width:200px) and (max-width:600px){
+  /* NavBar Styling */
+  .navbar {
+   padding: 3px;
+   width: 100%;
+   position: relative;
+ }
+
+ .navbar ul {
+   flex-direction: row;
+   width: 100%;
+   justify-content:left;
+   margin: 10px 15px;
+ }
+
+ .navbar ul li {
+   padding: 3px 10px;
+ }
+
+}

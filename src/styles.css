@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 /* text stlyling*/
 
 .nm-text{
@@ -32,9 +35,23 @@
 }
 
 /* */
+@media only screen and (min-width:200px) and (max-width:600px){
+  /* NavBar Styling */
+  .nav_text{
+    font-size: 1.0rem;    
+}
+.nm-text{
+  font-size: 14px;
+}
+.heading2{
+  font-family: 'Cinzel', serif;
+  font-size: 36px;
+  margin-bottom: 16px;
+  margin-top: 20px;
+  font-weight: 600;
+  text-align: center;
+}
 
-@media only screen and (min-width: 0px) and (max-width:600px){
-   /* NavBar Styling */
 }
 
 /* tab responsive {display width(600-1000)} */

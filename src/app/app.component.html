@@ -1,6 +1,12 @@
-<app-video></app-video>
+<section id="home">
+    <app-video (navigateTo)="scrollToSection($event)"></app-video>
+</section>
 <app-services></app-services>
-<app-pics></app-pics>
-<app-contactus></app-contactus>
+<section id="pics">
+    <app-pics></app-pics>
+</section>
+<section id="contact">
+    <app-contactus></app-contactus>
+</section>
 <app-instastrip></app-instastrip>
-<app-footer></app-footer>
+<app-footer (navigateTo)="scrollToSection($event)"></app-footer>

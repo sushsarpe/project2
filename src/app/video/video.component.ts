@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Output, ViewChild } from '@angular/core';
 import { NavbarComponent } from "../navbar/navbar.component";
 
 @Component({
@@ -17,5 +17,11 @@ export class VideoComponent {
 
   disableRightClick(event: MouseEvent) {
     event.preventDefault();
+  }
+
+  @Output() navigateTo = new EventEmitter<string>();
+
+  onNavbarNavigate(section: string) {
+    this.navigateTo.emit(section);
   }
 }
