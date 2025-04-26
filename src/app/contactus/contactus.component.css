@@ -1,0 +1,86 @@
+.container_c{
+    width: 100%;
+    padding: 20px 20px;
+    background-color: #FFF5E1;
+}
+.sec1{
+    width: 70%;
+    margin: auto;
+    padding: 10px 25px;
+    text-align: center;
+  }
+  .sec1 .heading{
+      font-size: 20px;
+      text-align: start;
+  }
+
+  .sec1 .n-text{
+    padding: 25px 0;
+  }
+  
+  .containers{
+      padding: 10px 0;
+  }
+  .sec2{
+   width: 50%;
+   margin: auto;
+   padding: 25px 0;
+  }
+  
+  .form{
+    padding: 10px 0;
+  }
+   
+  .form p,input{
+      color: black;
+  }
+  
+  .form .field{
+      display: flex;
+      flex-direction: column;
+      margin: 15px 0;
+  } 
+  
+  .form .date{
+      width: 30%;
+  }
+  .field input{
+      margin: 7px 0;
+      padding: 5px 10px;
+      border: 1px solid rgb(164, 161, 161);
+      border-radius: 6px;
+      background-color: #FAF7F0;
+  }
+  
+  .field textarea{
+      margin: 10px 0;
+      padding: 10px;
+      border: 1px solid rgb(164, 161, 161);
+      border-radius: 6px;
+      background-color: #FAF7F0;
+  }
+  
+  .btn-a{
+      padding: 10px 25px;
+      border-radius: 6px;
+  }
+  
+  .btn-b{
+      padding: 5px 20px;
+      border-radius: 6px;
+  }
+
+  
+.notify{
+    position: fixed;
+    top: 10px;
+    left: 30%;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    background-color: rgb(231 231 195);
+    border: 3px solid black;
+    height: 140px;
+    border-radius: 15px;
+}

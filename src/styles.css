@@ -1,1 +1,43 @@
-/* You can add global styles to this file, and also import other style files */
+/* text stlyling*/
+
+.nm-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color:  #0d0d0d;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
+
+.heading1{
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.heading2{
+    font-family: 'Cinzel', serif;
+    font-size: 36px;
+    margin-bottom: 16px;
+    margin-top: 32px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.nav_text{
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;    
+    text-transform: uppercase; /* Optional: adds structure */
+    letter-spacing: 1px;
+    color:  white;
+}
+
+/* */
+
+@media only screen and (min-width: 0px) and (max-width:600px){
+   /* NavBar Styling */
+}
+
+/* tab responsive {display width(600-1000)} */
+@media only screen and (min-width: 601px) and (max-width:1000px){
+   
+}

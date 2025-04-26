@@ -1,0 +1,76 @@
+<div class="d_container pics">
+  <p class="heading2 ">EVERY PHOTO TELLS A STORY</p>
+  <div class="subCat">
+    <div class="label-box">
+      <ul>
+        <li *ngFor="let Cat of categories">
+          <a (click)="setCat(Cat.name)"
+            >
+            <div class="labels rajdhani"
+            [class.active]="this.selectedCat.name === Cat.name">{{ Cat.name }}</div></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="container-fluid preview">
+      <div class="row">
+        <div
+          *ngFor="let item of selectedCat.images; let i = index"
+          class="item col-md-3 col-sm-6"
+        >
+          <img
+            (click)="onPreviewImage(i)"
+            [src]="'assets/images/' + item.imgName"
+            [alt]="item.imgAlt"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="showMask" class="lightbox">
+      <span *ngIf="showCount" class="count"
+        >{{ currentIndex + 1 }}/{{ totalImageCount }}</span
+      >
+      <a *ngIf="previewImage" class="closew" (click)="onClosePreview()">
+        <img src="../assets/close.png" alt="" />
+      </a>
+      <!-- <button *ngIf="previewImage" class="closew" (click)="onClosePreview()">
+          <img src="../../../assets/close.png" alt="">
+      </button> -->
+      <!-- <div class="slideshowbar">
+          <a *ngIf="slideshow" class="navigation slideshow" (click)="start_show()">
+              <img src="../../../assets/slideshow-line-icon.png" alt="">
+          </a>
+          <a *ngIf="pause_s" class="navigation pause" (click)="pause_show()">
+              <i class="bi bi-pause"></i>
+          </a>
+          <a *ngIf="start_s" class="navigation start" (click)="start_show()">
+              <i class="bi bi-play"></i>
+          </a>
+          <a *ngIf="cancel_s" class="navigation cancel" (click)="cancel_show()">
+              <i class="bi bi-x"></i>
+          </a>
+      </div> -->
+
+      <a *ngIf="controls" class="navigation prev" (click)="prev()">
+        <img src="../assets/prev.png" alt="" />
+      </a>
+
+      <!-- <div class="mob_controls">
+          <i class="bi bi-arrow-left-short" (click)="prev()"></i>
+          <i class="bi bi-arrow-right-short" (click)="next()"> </i>
+      </div> -->
+
+      <a *ngIf="controls" class="navigation next" (click)="next()">
+        <img src="../assets/next.png" alt="" />
+      </a>
+      <div *ngIf="previewImage" #imageContainer class="lightbox-img">
+        <img
+          [src]="'/assets/images/' + currentLightboxImage.imgName"
+          [alt]="currentLightboxImage.imgAlt"
+        />
+      </div>
+    </div>
+  </div>
+</div>

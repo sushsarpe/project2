@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  border: 0;
+}
+
+.navbar {
+  padding: 7px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+}
+
+.navbar ul {
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  margin: 20px 25px;
+}
+
+.navbar ul li {
+  text-align: center;
+  padding: 7px 23px;
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+}
+
