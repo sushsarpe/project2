@@ -27,8 +27,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
-            "prerender": true
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -53,18 +52,6 @@
             }
           },
           "defaultConfiguration": "production"
-        },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "configurations": {
-            "production": {
-              "buildTarget": "project2:build:production"
-            },
-            "development": {
-              "buildTarget": "project2:build:development"
-            }
-          },
-          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n"
