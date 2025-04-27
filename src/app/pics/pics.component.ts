@@ -19,10 +19,10 @@ interface category{
 })
 export class PicsComponent implements OnInit{
   ImageCount = new Map<string, number>([
-    ['ALL', 10], //149
-    ['PRE_WEDD', 12], //210
-    ['WEDD', 10], //165
-    ['GETREADY', 10], //32
+    ['ALL', 149], //149
+    ['PRE_WEDD', 210], //210
+    ['WEDD', 165], //165
+    ['GETREADY', 32], //32
   ]);
  
   selectedCat: category ={
