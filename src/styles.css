@@ -56,5 +56,26 @@ html {
 
 /* tab responsive {display width(600-1000)} */
 @media only screen and (min-width: 601px) and (max-width:1000px){
-   
+  .nm-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color:  #0d0d0d;
+    letter-spacing: 1px;
+    line-height: 1.6;
+}
+
+.heading1{
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.heading2{
+    font-family: 'Cinzel', serif;
+    font-size: 26px;
+    margin-bottom: 16px;
+    margin-top: 32px;
+    font-weight: 600;
+    text-align: center;
+}
 }

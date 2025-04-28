@@ -9,25 +9,29 @@
             Contact: +91 8450998473
         </p>
     </div>
-    <div class="sec2">
-        <p class="heading1" style="text-align: center;">BOOK NOW</p>
-        <form class="form" #contactForm="ngForm" (ngSubmit)="submitForm(contactForm)" method="post">
-            <p class="field">Name *<input type="text" required #name="ngModel" name="name" id="name" ngModel></p>
-            <p class="field">Email *<input type="email" required #email="ngModel" email name="email" id="email" ngModel>
-                <br> <span *ngIf="email.invalid && email.touched" style="color: red;">Please enter valid email
-                    address</span>
-            </p>
-            <p class="field">Mobile No.*<input type="tel" name="phone" id="phone" placeholder="+91 00000-00000"
-                    maxlength="10" ngModel required></p>
-            <p class="field">Couple Name <input type="text" name="cpl_name" id="cpl_name" ngModel></p>
-            <p class="field date">Event Date<input type="date" id="date" name="date" ngModel></p>
-            <p class="field">Shoot Location<input type="text" name="loc" id="loc" ngModel></p>
-            <p class="field">Event Details*<textarea name="event" id="event" cols="30" rows="4" required
-                    placeholder="More about event OR ask your questions" ngModel></textarea></p>
-            <!-- <p class="field">Tell us more about yourself<textarea name="user" id="user" cols="30" rows="4" ngModel></textarea></p> -->
-            <button [disabled]="contactForm.invalid" routerLink="../contact" type="submit" class="btn-a">Submit</button>
-        </form>
+
+    <div class="backg">
+        <div class="sec2">
+            <p class="heading1" style="text-align: center;color: white; font-size: 30px;">BOOK NOW</p>
+            <form class="form" #contactForm="ngForm" (ngSubmit)="submitForm(contactForm)" method="post">
+                <p class="field">Name *<input type="text" required #name="ngModel" name="name" id="name" ngModel></p>
+                <p class="field">Email *<input type="email" required #email="ngModel" email name="email" id="email" ngModel>
+                    <br> <span *ngIf="email.invalid && email.touched" style="color: red;">Please enter valid email
+                        address</span>
+                </p>
+                <p class="field">Mobile No.*<input type="tel" name="phone" id="phone" placeholder="+91 00000-00000"
+                        maxlength="10" ngModel required></p>
+                <p class="field">Couple Name <input type="text" name="cpl_name" id="cpl_name" ngModel></p>
+                <p class="field date">Event Date<input type="date" id="date" name="date" ngModel></p>
+                <p class="field">Shoot Location<input type="text" name="loc" id="loc" ngModel></p>
+                <p class="field">Event Details*<textarea name="event" id="event" cols="30" rows="4" required
+                        placeholder="More about event OR ask your questions" ngModel></textarea></p>
+                <!-- <p class="field">Tell us more about yourself<textarea name="user" id="user" cols="30" rows="4" ngModel></textarea></p> -->
+                <button [disabled]="contactForm.invalid" routerLink="../contact" type="submit" class="btn-a">Submit</button>
+            </form>
+        </div>
     </div>
+    
     <div *ngIf="success" class="notify">
         <p>Thank you for contacting us :) <br>we recieved your responce and will connect with you as soon as possible.
         </p>

@@ -26,12 +26,12 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    background-color: black;
-    height: 650px;
+    background-color: rgb(0, 0,0,0.5);
+    height: 600px;
 }
 
 .my_work .container_b .img img{
-    height: 650px;
+    height: 600px;
     width: 100%;
     object-fit:cover;
 }
@@ -40,7 +40,7 @@
     width: 100%;
     padding: 15px 0;
     color: white;
-    background-color: transparent;
+    background-color: rgb(0, 0,0,0.3);
     position: absolute;
     bottom: 25px;
     z-index: 1;
@@ -71,18 +71,17 @@
         padding: 25px 5px;
         flex-direction: column;
         justify-content:center;
-
     }
     
     .my_work .container_b .img{
         margin: 2px 0px;
         width: 100%;
-        height: 250px;
+        height: 270px;
         flex-direction: column;
     }
     
     .my_work .container_b .img img{
-        height: 250px;
+        height: 270px;
     }
     
     .my_work .container_b .img p{
@@ -105,5 +104,47 @@
     .adv .disc {
         width: 95%;
         margin: auto;
+    }
+}
+
+@media only screen and (min-width:600px) and (max-width: 1200px) {
+    .my_work{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        padding: 15px 0px;
+    }
+
+    .my_work .container_b{
+        width: 100%;
+        padding: 25px 5px;
+        justify-content:center;
+    }
+
+    .adv .disc {
+        width: 90%;
+        margin: auto;
+        font-size: 14px;
+    }
+    .my_work .container_b .img img{
+        height: 450px;
+    }
+
+    .my_work .container_b .img{
+        margin: 2px 0px;
+        width: 100%;
+        height: 450px;
+        flex-direction: column;
+    }
+
+    .my_work .container_b .img p{
+        width: 100%;
+        padding: 15px 0;
+        color: white;
+        background-color: rgb(0, 0,0,0.3);
+        position: absolute;
+        bottom: 15px;
+        z-index: 1;
+        font-size: 35px;
     }
 }

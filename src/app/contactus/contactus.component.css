@@ -1,6 +1,6 @@
 .container_c{
     width: 100%;
-    padding: 20px 20px;
+    padding: 20px 0px;
     background-color: #FFF5E1;
 }
 .sec1{
@@ -24,36 +24,48 @@
   .sec2{
    width: 50%;
    margin: auto;
-   padding: 25px 0;
+   padding: 35px 0;
   }
   
+  .container_c .backg{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    background-image:
+    linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)),
+    url('/assets/images/GETREADY/image_24.jpg');
+    background-size: cover;       /* cover the entire div */
+    background-position: center;  /* center the image */
+    background-repeat: no-repeat; 
+  }
+
   .form{
     padding: 10px 0;
   }
    
   .form p,input{
-      color: black;
+      color: white;
   }
   
   .form .field{
       display: flex;
       flex-direction: column;
-      margin: 15px 0;
+      margin: 10px 0;
   } 
   
   .form .date{
       width: 30%;
   }
   .field input{
-      margin: 7px 0;
-      padding: 5px 10px;
+      margin: 5px 0;
+      padding: 3px 10px;
       border: 1px solid rgb(164, 161, 161);
       border-radius: 6px;
       background-color: #FAF7F0;
   }
   
   .field textarea{
-      margin: 10px 0;
+      margin: 5px 0;
       padding: 10px;
       border: 1px solid rgb(164, 161, 161);
       border-radius: 6px;

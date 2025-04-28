@@ -52,8 +52,7 @@
     margin: 0px auto ;
     background-color:white;
     height: 90vh;
-    overflow-y: scroll;
-    
+    overflow-y: scroll;   
 }
 
 .d_container .preview .row{
@@ -69,7 +68,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 85%;
 }
 
 .lightbox{
@@ -172,4 +170,23 @@
         z-index: 2;
     }
     
+}
+
+@media only screen and (min-width:600px) and (max-width:1200px){
+    .d_container .label-box{
+        width: 100%;
+        padding: 25px 0;
+    }
+    .d_container .label-box ul{
+        width: 85%;
+        border-radius: 9px;
+        padding: 2px 2px;
+     }
+     .d_container .preview{
+        width: 95%;
+        margin: 0px auto ;
+        background-color:white;
+        height: 90vh;
+        overflow-y: scroll;   
+    }
 }
