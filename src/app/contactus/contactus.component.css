@@ -43,10 +43,12 @@
     padding: 10px 0;
   }
    
-  .form p,input{
+  .form p{
       color: white;
   }
-  
+  .form input{
+    color: black;
+}
   .form .field{
       display: flex;
       flex-direction: column;
